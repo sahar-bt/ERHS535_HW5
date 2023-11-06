@@ -42,7 +42,7 @@ denver_homicides <- denver_homicides %>%
   mutate(unsolved_homicides = as_factor(x = unsolved_homicides),
          unsolved_homicides = fct_recode(unsolved_homicides, Solved = "TRUE", 
                                          Unsolved = "FALSE"))
-
+# check towns
 denver_homicides %>%
   mutate(victim_race = fct_lump(victim_race, n = 3)) %>%
   count(victim_race)
