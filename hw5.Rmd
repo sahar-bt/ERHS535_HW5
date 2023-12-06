@@ -48,8 +48,9 @@ denver_homicides %>%
   count(victim_race)
 ```
 
-#sf map of denver,colorado
-To download boundaries for some sub-city geography (e.g., tracts, block groups, county subdivisions)
+#sf map of denver, colorado
+To download boundaries for some sub-city geography 
+(e.g., tracts, block groups, county subdivisions) I used the sf package
 
 ```{r}
 counties <- counties(state = "CO", cb = TRUE, class = "sf", 
