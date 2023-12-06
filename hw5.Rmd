@@ -74,7 +74,7 @@ denver_homicides <- st_as_sf(denver_homicides, coords = c("lon", "lat")) %>%
 denver_homicides <- st_transform(denver_homicides, st_crs(blocks))
 
 ggplot() +
-  geom_sf(data = blocks, fill = "darkcyan", alpha = 0.5) +
+  geom_sf(data = blocks, fill = "darkcyan", alpha = 0.3) +
   geom_sf(data = denver_homicides, aes(colour = city)) + 
   facet_wrap(~ unsolved_homicides) +
   theme_dark()
