@@ -46,8 +46,6 @@ denver_homicides <- denver_homicides %>%
 denver_homicides %>%
   mutate(victim_race = fct_lump(victim_race, n = 3)) %>%
   count(victim_race)
-
-
 ```
 
 #sf map of denver,colorado
