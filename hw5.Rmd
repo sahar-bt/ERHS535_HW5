@@ -17,7 +17,7 @@ library(sf)
 library(forcats)
 ```
 
-#import data  and selected only Denver 
+# **import data  and selected only Denver**
 
 ```{r}
 homicides <- read_csv("/Users/sahartoulabi/Library/CloudStorage/OneDrive-Colostate/PostDoc/Classes/R ProgrammingForResearch_2022/Homework/HW5/homicide-data.csv")
@@ -58,7 +58,7 @@ counties <- counties(state = "CO", cb = TRUE, class = "sf",
 blocks <- block_groups("CO", "Denver", progress_bar = FALSE)
 
 ggplot() +
-  geom_sf(data = blocks, fill = "darkcyan", alpha = 0.5) 
+  geom_sf(data = blocks, fill = "antiquewhite", alpha = 0.5) 
 ```
 #adding the homicides  
 to show as a layer underneath the points showing homicides.
@@ -77,4 +77,5 @@ ggplot() +
   facet_wrap(~ unsolved_homicides) 
   
 ```
+
 
