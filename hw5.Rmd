@@ -59,7 +59,9 @@ counties <- counties(state = "CO", cb = TRUE, class = "sf",
 blocks <- block_groups("CO", "Denver", progress_bar = FALSE)
 
 ggplot() +
-  geom_sf(data = blocks, fill = "antiquewhite", alpha = 0.5) 
+  geom_sf(data = blocks, fill = "antiquewhite", alpha = 0.5) +
+  theme_bw()
+
 ```
 #adding the homicides  
 to show as a layer underneath the points showing homicides.
