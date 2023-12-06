@@ -65,10 +65,7 @@ ggplot() +
 ```
 #adding the homicides  
 1- I used facet_wrap for solved versus unsolved homicides
-
-to show as a layer underneath the points showing homicides.
-Use different facets for solved versus unsolved homicides and different colors to show the three race groups with the highest number of homicides
-
+2- I showed it as a layer underneath the points showing homicides.
 
 ```{r}
 denver_homicides <- st_as_sf(denver_homicides, coords = c("lon", "lat")) %>% 
