@@ -1,6 +1,6 @@
 ---
 title: "HW5"
-author: "Sahar Toulabi"
+author: "Sahar B. Toulabi"
 date: "2023-10-12"
 output:
   word_document: default
