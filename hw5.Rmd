@@ -19,7 +19,7 @@ library(forcats)
 
 # **import data  and selected only Denver**
 
-```{r}
+```{r include=FALSE, echo=FALSE}
 homicides <- read_csv("/Users/sahartoulabi/Library/CloudStorage/OneDrive-Colostate/PostDoc/Classes/R ProgrammingForResearch_2022/Homework/HW5/homicide-data.csv")
 
 # to make sure Denver is one of the cities
